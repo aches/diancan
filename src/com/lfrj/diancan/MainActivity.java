@@ -11,6 +11,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        System.out.print("测试            ");
         setContentView(R.layout.activity_main);
     }
 
