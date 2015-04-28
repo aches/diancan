@@ -12,6 +12,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         System.out.print("测试            ");
+        System.out.println("来自pc");
+        
         setContentView(R.layout.activity_main);
     }
 
