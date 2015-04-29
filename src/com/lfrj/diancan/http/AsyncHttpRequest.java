@@ -26,8 +26,6 @@ import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.AbstractHttpClient;
 import org.apache.http.protocol.HttpContext;
 
-import com.usx.utils.GSLog;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.UnknownHostException;
@@ -114,7 +112,6 @@ public class AsyncHttpRequest implements Runnable {
 		try {
 			makeRequestWithRetries();
 		} catch (IOException e) {
-			GSLog.LogI("info", "接口Retries失败:" + request.getURI().toString() + e);
 			if (!isCancelled() && responseHandler != null) {
 				responseHandler.sendFailureMessage(0, null, null, e);
 			} else {
@@ -193,8 +190,6 @@ public class AsyncHttpRequest implements Runnable {
 					makeRequest();
 					return;
 				} catch (UnknownHostException e) {
-					GSLog.LogI("info", "接口" + request.getURI().toString() + "访问异常，Retries["+executionCount+"]....." + e);
-
 					// switching between WI-FI and mobile data networks can
 					// cause a retry which then results in an
 					// UnknownHostException
@@ -208,8 +203,6 @@ public class AsyncHttpRequest implements Runnable {
 							&& retryHandler.retryRequest(cause,
 									++executionCount, context);
 				} catch (NullPointerException e) {
-					GSLog.LogI("info", "接口" + request.getURI().toString() + "访问异常，Retries["+executionCount+"]....." + e);
-
 					// there's a bug in HttpClient 4.0.x that on some occasions
 					// causes
 					// DefaultRequestExecutor to throw an NPE, see
@@ -219,10 +212,8 @@ public class AsyncHttpRequest implements Runnable {
 					retry = retryHandler.retryRequest(cause, ++executionCount,
 							context);
 				} catch (IOException e) {
-					GSLog.LogI("info", "接口" + request.getURI().toString() + "访问异常，Retries["+executionCount+"]....." + e);
 
 					if (isCancelled()) {
-						GSLog.LogI("info", "接口" + request.getURI().toString() + "访问异常，用户取消请求!");
 						// Eating exception, as the request was cancelled
 						return;
 					}
@@ -235,8 +226,6 @@ public class AsyncHttpRequest implements Runnable {
 				}
 			}
 		} catch (Exception e) {
-			GSLog.LogI("info", "接口" + request.getURI().toString() + "访问异常，Retries["+executionCount+"]....." + e);
-
 			// catch anything else to ensure failure message is propagated
 			Log.e("AsyncHttpRequest", "Unhandled exception origin cause", e);
 			cause = new IOException("Unhandled exception: " + e.getMessage());
