@@ -1,19 +1,23 @@
 package com.lfrj.diancan.view;
 
+import butterknife.ButterKnife;
+
 import com.lfrj.diancan.R;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseToolbarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        ButterKnife.inject(this);
+		initToolSuperBar();
     }
 
 
@@ -35,4 +39,25 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+	@Override
+	protected void initToolSuperBar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public <T> void onFailure(int requestCode, int resultCode, T parameter) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public <T> void onSuccess(int requestCode, int resultCode, T parameter) {
+		// TODO Auto-generated method stub
+		
+	}
 }

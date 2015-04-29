@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_shadow">#44000000</color>
+    <color name="color_primary_red">#f44336</color>
+    <color name="context_menu_text_color">#ffffff</color>
+    <color name="text_more_color">#3fb368</color>
+    <color name="top1">#fcd108</color>
+    <color name="top2">#12d4eb</color>
+    <color name="top3">#ee2c5e</color>
+    <color name="colorPrimary">#d43b33</color>
+    <color name="orange">#e36f32</color>
+    <color name="white">#ffffff</color>
+    <color name="white_alpha">#55ffffff</color>
+    <color name="drawer_bg">#272728</color>
+    <!-- CircularProgress的颜色 -->
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="base_alertdialog_background">#ffffff</color>
+    <color name="colorControlNormal">#FF78909C</color>
+    <color name="colorControlActivated">#FF03A9F4</color>
+    <color name="colorSwitchThumbNormal">#FF0000</color>
+    <color name="common_red">#e6493d</color>
+    <color name="common_green">#77bb55</color>
+    <color name="transparent">#00000000</color>
+    <color name="sweet_alert_dialog_text_color">#575757</color>
+    <color name="quzi_type_consume_text">#999999</color>
+    <color name="dark_gray">#333333</color>
+    <color name="light_gray">#AFFFFFFF</color>
+    <color name="score_color">#1bbbb1</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorPrimaryLight">#cfd8dc</color>
+
+    <!-- 主页4模块颜色 -->
+    <color name="home_bg_movie">#e55249</color>
+    <color name="home_bg_upcoming">#f49b1b</color>
+    <color name="home_bg_shop">#02aca6</color>
+    <color name="home_bg_guess">#4d8eea</color>
+    <!-- Iphone dialog风格 -->
+    <color name="base_alertdialog_button">#aa0000ff</color>
+    <color name="base_alertdialog_focuse">#eaeaea</color>
+    <color name="base_alertdialog_normal">#ffffff</color>
+    <color name="movie_buy_stroke_color">#cacaca</color>
+    <color name="header_bar">#e6493d</color>
+    <color name="header_bar_black">#22000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="black">#000000</color>
+    <color name="television_box_office">#57a701</color>
+    <color name="gray">#f3f3f3</color>
+    <color name="gray2">#c0c0c0</color>
+    <color name="gray3">#e8e8e8</color>
+    <color name="gray4">#f2f2f2</color>
+    <color name="gray5">#999999</color>
+    <color name="order_button"> #007FFF </color>
+    <color name="my_data_popupwindow">#FFFFFF</color>
+    <color name="my_data_text_color">#eaeaea</color>
+
+    <!-- 竞猜详细 -->
+    <color name="quit_detail_background">#fffabc</color>
+    <color name="foreground_dark">#bebebe</color>
+    <color name="trans_black">#b5000000</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#ddA5DC86</color>
+
+    <!-- 我的优惠券 -->
+    <color name="coupons_type0">#01b295</color>
+    <color name="coupons_type1">#f2872a</color>
+    <color name="coupons_type2">#8f8f8f</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>
