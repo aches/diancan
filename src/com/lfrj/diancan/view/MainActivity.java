@@ -1,4 +1,9 @@
-package com.lfrj.diancan;
+package com.lfrj.diancan.view;
+
+import com.lfrj.diancan.R;
+import com.lfrj.diancan.R.id;
+import com.lfrj.diancan.R.layout;
+import com.lfrj.diancan.R.menu;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,9 +16,6 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.print("测试            ");
-        System.out.println("来自pc");
-        
         setContentView(R.layout.activity_main);
     }
 
