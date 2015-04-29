@@ -1,9 +1,6 @@
 package com.lfrj.diancan.view;
 
 import com.lfrj.diancan.R;
-import com.lfrj.diancan.R.id;
-import com.lfrj.diancan.R.layout;
-import com.lfrj.diancan.R.menu;
 
 import android.app.Activity;
 import android.os.Bundle;
